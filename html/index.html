@@ -5,6 +5,9 @@
     </head>
 
     <body>
+        <a href="blog.html">Go to Blog</a>
+        <hr>
+        
         <!-- Heading -->
         <h1>Heading One</h1>
         <h2>Heading Two</h2>
@@ -20,5 +23,119 @@
         <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="http://google.com" target="_blank">Obcaecati delectus </a> rem animi ab aperiam aliquid quibusdam eaque sed necessitatibus magnam. Eos ea, error ipsum voluptatibus voluptate facere praesentium. Architecto, nisi!
         </p>
+
+        <!-- List -->
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ul>
+
+        <ol>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ol>
+
+        <!-- Table -->
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Gede Agus</td>
+                    <td>saniagus@gmail.com</td>
+                    <td>18</td>
+                </tr>
+
+                <tr>
+                    <td>Gede Agus</td>
+                    <td>saniagus@gmail.com</td>
+                    <td>18</td>
+                </tr>
+
+                <tr>
+                    <td>Gede Agus</td>
+                    <td>saniagus@gmail.com</td>
+                    <td>18</td>
+                </tr>
+            </tbody>
+
+        </table>
+        
+        <br>
+        <hr>
+        <br>
+
+        <!-- Forms -->
+        <form action="process.php" method="POST">
+            <div>
+                <label>First Name</label>
+                <input type="text" name="firstName" placeholder="Enter First Name">
+            </div>
+            <br>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+            <br>
+            <div>
+                <label>Message</label>
+                <textarea name="message"></textarea>
+            </div>
+            <br>
+            <div>
+                <label>Gender</label>
+                <select name="gender">
+                    <option value=""></option>
+                    <option value="male">Male</option>
+                    <option value="female">female</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Age:</label>
+                <input type="number" name="age" min="0" value="30">
+            </div>
+            <br>
+            <div>
+                <label>Birthday:</label>
+                <input type="date" name="birthday">
+            </div>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+
+        <!-- Button -->
+
+        <button>Click Me</button>
+        <br>
+
+        <!-- Images -->
+        <a href="images/sample.jpg">
+            <img src="images/sample.jpg" alt="My Sample Image" width="200">
+        </a>
+        
+        <!-- Quotations -->
+        <blockquote cite="http://traversymedia.com">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ea delectus reprehenderit. Cupiditate vero doloremque et corporis eius quod culpa alias debitis veritatis quibusdam modi, minima ad accusamus magni illum. 
+        </blockquote>
+
+        <p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
+        <p><cite>HTML</cite> Crash Course</p>
+
+        
+        <div style="margin-top:500px"></div>
     </body>
 </html>
