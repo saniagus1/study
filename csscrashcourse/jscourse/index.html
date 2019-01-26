@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learning Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <div class="header">
+        <h1>Learning Javascript</h1>
+        <p>with Sani Agus</p>
+    </div>
+
+    <div class="container">
+
+    </div>
+
+    <script>
+        console.log('Hello');
+        // Number
+        var number1 = 21;
+        alert(number1);
+        // Object Literal
+        var person = {
+            firstName : 'Sani',
+            lastName : 'Agus',
+            age : '23',
+            children: ['Nick', 'Brian'],
+            address:{
+                street: 'tejakula',
+                city: 'bondalem'
+            },
+            fullName: function(){
+                return this.firstName +' '+ this.lastName;
+            }
+        }
+
+        console.log(person.fullName());
+
+        var apple = new Object();
+        apple.color = 'red';
+        apple.shape = 'round';
+        apple.describe = function(){
+            return 'An apple is the color' + this.color + 'and is the shape' + this.shape;
+        }
+
+        console.log(apple.describe());
+
+        //Constuctor Pattern
+        function Fruit(name, color, shape){
+            this.name = name;
+            this.color = color;
+            this.shape = shape;
+            this.describe = function(){
+                return 'A' + this.name +'is the color'+ this.color + 'and its shape is ' + this.shape;
+            }
+        }
+
+        var apple = new Fruit('apple', 'red', 'brown');
+        var melon = new Fruit('melon', 'green', 'brown');
+
+        console.log(apple);
+        console.log(melon.describe());
+
+        //Array of Object
+        var users = [
+            {
+                name: 'Jhon Doe',
+                age: 30
+            },
+            {
+                name: 'Mark Smith',
+                age: 34
+            },
+            {
+                name: 'Shelly William',
+                age: 20
+            }
+        ];
+
+        console.log(users[0].name);
+    </script>
+</body>
+</html>
